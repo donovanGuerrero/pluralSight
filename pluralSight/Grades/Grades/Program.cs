@@ -6,20 +6,22 @@ using System.Threading.Tasks;
 
 namespace Grades
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            GradeBook book = new GradeBook();
-            book.AddGrade(91);
-            book.AddGrade(89.5f);
-            book.AddGrade(75);
 
-            GradesStatistics stats = book.ComputeStatistics();
-            Console.WriteLine("Average Grade: " + stats.AverageGrade);
-            Console.WriteLine("Highest Grade: " + stats.HighestGrade);
-            Console.WriteLine("Lowest Grade: " + stats.LowestGrade);
+      
+      GradeBook book = new GradeBook();
+      book.AddGrade(91);
+      book.AddGrade(89.5f);
+      book.AddGrade(75);
 
-        }
+      GradesStatistics stats = book.ComputeStatistics();
+      Console.WriteLine("Average Grade: " + stats.AverageGrade);
+      Console.WriteLine("Highest Grade: " + stats.HighestGrade);
+      Console.WriteLine("Lowest Grade: " + stats.LowestGrade);
+      
     }
+  }
 }
