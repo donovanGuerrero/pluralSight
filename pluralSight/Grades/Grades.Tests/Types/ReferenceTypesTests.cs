@@ -17,14 +17,15 @@ namespace Grades.Tests.Types
       Assert.AreEqual(46, x);
     }
 
-    private void IncrementNumber(int number)
+    private void IncrementNumber(int num)
     {
-      number += 1;
+      num += 1;
     }
 
     [TestMethod]
     public void ReferenceTypesPassByValue()
     {
+      var x = 4.25;
       GradeBook book1 = new GradeBook();
       GradeBook book2 = book1;
 

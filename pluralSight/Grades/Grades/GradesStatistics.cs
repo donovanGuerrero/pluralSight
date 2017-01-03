@@ -12,10 +12,10 @@ namespace Grades
     public GradesStatistics()
     {
       HighestGrade = 0;
-      LowestGrade = float.MaxValue;
+      LowestGrade = decimal.MaxValue;
     }
-    public float AverageGrade;
-    public float HighestGrade;
-    public float LowestGrade;
+    public decimal AverageGrade;
+    public decimal HighestGrade;
+    public decimal LowestGrade;
   }
 }
